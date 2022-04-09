@@ -7,7 +7,7 @@ import Toggle from './components/Toggle';
 
 function App() {
   return (
-    <div>
+    <div className='flex flex-col items-center space-y-10'>
       <Toggle />
       <Tab />
       <Slider />
