@@ -5,7 +5,12 @@ import Slider from './components/Slider';
 import Tab from './components/Tab';
 import Toggle from './components/Toggle';
 
+export const util = (...classNames) => {
+  return classNames.join(' ');
+};
+
 function App() {
+  
   return (
     <div className='flex flex-col items-center space-y-10'>
       <Toggle />

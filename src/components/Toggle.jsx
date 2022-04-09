@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { util } from '../App';
 
 const Toggle = () => {
   const [toggle, setToggle] = useState(true);
@@ -9,10 +10,6 @@ const Toggle = () => {
 
   const onRightToggle = () => {
     setToggle(false);
-  };
-
-  const util = (...classNames) => {
-    return classNames.join(' ');
   };
 
   return (
