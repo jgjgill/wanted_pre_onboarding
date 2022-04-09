@@ -30,3 +30,16 @@ CSS: tailwindcss 사용
 
 ### 생각하기
 -배열로 Tab을 관리해서 Tab 영역을 관리할 때 용이하게 하려 했지만 CSS는 일일이 수정해야 하는 단점
+
+#
+## Slider
+
+### 구현 방법
+-input에서 range 사용해서 슬라이더 구현
+
+-useState를 활용해서 슬라이더의 value값 할당
+
+-option에도 슬라이더의 value값 할당해서 상태값 변경 가능하게 구현
+
+### 생각하기
+-input의 range에서 스타일 구현에서 어려움 느낌
