@@ -3,7 +3,7 @@ import { util } from '../App';
 
 function check(email) {
   const reg_email =
-    /^([0-9a-zA-Z_\.-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
+    /^([0-9a-zA-Z_-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
 
   if (reg_email.test(email)) {
     return true;
@@ -64,7 +64,10 @@ const Input = () => {
             />
             <div className="absolute right-2 flex items-center h-full">
               <svg
-                className={util('w-5 h-5', emailCheck ? 'stroke-teal-400' : 'stroke-stone-400')}
+                className={util(
+                  'w-5 h-5',
+                  emailCheck ? 'stroke-teal-400' : 'stroke-stone-400'
+                )}
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"

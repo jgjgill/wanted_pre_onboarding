@@ -61,3 +61,20 @@ CSS: tailwindcss 사용
 -useRef를 활용해서 인풋의 타입 변경하기
 
 -useEffect를 통해 비밀번호 상태가 변할 때 체크하도록 구현
+
+### 생각하기
+
+
+#
+## Dropdown
+
+### 구현 방법
+-useState를 활용해서 드롭다운 기능 구현(treu, false)
+
+-includes, toUpperCase를 활용해서 키워드 필터 기능 구현
+
+-onChange로 값 상태 확인
+
+-useEffect를 통해 드롭다운 목록 filter로 업데이트
+
+### 생각하기

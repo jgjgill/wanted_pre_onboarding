@@ -10,9 +10,8 @@ export const util = (...classNames) => {
 };
 
 function App() {
-  
   return (
-    <div className='flex flex-col items-center space-y-10'>
+    <div className="flex flex-col items-center space-y-10">
       <Toggle />
       <Tab />
       <Slider />
