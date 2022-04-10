@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { util } from '../App';
 
 const Slider = () => {
   const sliderGroup = [1, 25, 50, 75, 100];
@@ -24,15 +25,36 @@ const Slider = () => {
           </div>
         </div>
 
-        <input
-          type="range"
-          list="slider"
-          onChange={onChange}
-          value={slider}
-          min='1'
-          max='100'
-          className=" w-full accent-teal-400 hover:cursor-pointer"
-        />
+        <div className="relative">
+          <input
+            type="range"
+            list="slider"
+            onChange={onChange}
+            value={slider}
+            min="1"
+            max="100"
+            className="absolute w-full top-1/2 -translate-y-1/2 accent-teal-400 hover:cursor-pointer appearance-none bg-transparent z-10 rounded-full"
+          />
+
+          <div className="absolute top-1/2 -translate-y-1/2 w-full flex items-center ">
+            <div
+              className="relative h-2 bg-teal-400 rounded-full"
+              style={{ width: `${slider}%` }}
+            />
+          </div>
+
+          <div className="flex absolute top-1/2  -translate-y-1/2 w-full justify-between items-center">
+            {sliderGroup.map((sliderValue) => (
+              <div
+                key={sliderValue}
+                className={util(
+                  'rounded-full  h-4 w-4',
+                  slider >= sliderValue ? 'bg-teal-400' : 'bg-stone-200'
+                )}
+              />
+            ))}
+          </div>
+        </div>
         <datalist id="slider" className="flex justify-between">
           {sliderGroup.map((slider, i) => (
             <option
