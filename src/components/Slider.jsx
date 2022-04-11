@@ -38,10 +38,12 @@ const Slider = () => {
 
           <div className="absolute top-1/2 -translate-y-1/2 w-full flex items-center ">
             <div
-              className="relative h-2 bg-teal-400 rounded-full"
+              className="h-2 bg-teal-400 rounded-full z-10"
               style={{ width: `${slider}%` }}
             />
           </div>
+
+          <div className="h-2 w-full bg-stone-200 rounded-full" />
 
           <div className="flex absolute top-1/2  -translate-y-1/2 w-full justify-between items-center">
             {sliderGroup.map((sliderValue) => (
