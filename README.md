@@ -64,7 +64,6 @@ CSS: tailwindcss 사용
 
 ### 생각하기
 
-
 #
 ## Dropdown
 
@@ -78,3 +77,9 @@ CSS: tailwindcss 사용
 -useEffect를 통해 드롭다운 목록 filter로 업데이트
 
 ### 생각하기
+
+#
+## Deploy
+
+### 배포 방법
+-깃페이지 배포
