@@ -1,4 +1,10 @@
 # wanted_pre_onboarding
+
+## ⚡️Refactoring
+https://github.com/jgjgill/wanted_pre_onboarding_refactoring
+
+관련 과제 리펙토링 주소입니다!
+
 ## 프로젝트 세팅
 CSS: tailwindcss 사용
 
